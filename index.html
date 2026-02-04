@@ -370,7 +370,7 @@ function looksLikeTimeOrDateToken(s) {
 
       const status =
         confidence >= 0.90 && !ambiguous ? "high" :
-        confidence >= 0.75 ? "medium" :
+        confidence >= 0.60 ? "medium" :
         "low";
 
       return {
@@ -719,4 +719,5 @@ function looksLikeTimeOrDateToken(s) {
 </script>
 </body>
 </html>
+
 
